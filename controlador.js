@@ -16,19 +16,21 @@ botonFormulario.addEventListener("click", function(evento){
         text: "listo!",
         icon: "success"
     });
-    Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Intentalo Nuevamente!",
-        footer: '<a href="#">¿Por qué tengo este problema?</a>'
-    });
+    // Swal.fire({
+    //     icon: "error",
+    //     title: "Oops...",
+    //     text: "Intentalo Nuevamente!",
+    //     footer: '<a href="#">¿Por qué tengo este problema?</a>'
+    // });
     let datosPorEnviarAlBack={
         "nombre":nombres.value,
         "cantidadVida":cantidadVida.value,
         "poderAtaque":poderAtaque.value,
         "poderDefensa":poderDefensa.value,
         "fotografia":fotografia.value,
-        "fechaCreacion":fechaCreacion.value
+        "fechaCreacion":fechaCreacion.value,
+        "categoria": categoria.value,
+        "legendario": legendario.value
     }
     let datosListosParaViajar=JSON.stringify(datosPorEnviarAlBack)
 
