@@ -11,17 +11,17 @@ let botonFormulario= document.getElementById("boton")
 
 botonFormulario.addEventListener("click", function(evento){
     evento.preventDefault()
-   /* Swal.fire({
-        title: "Good job!",
+    Swal.fire({
+        title: "Buen trabajo!",
         text: "listo!",
         icon: "success"
-    });*/
-    /*Swal.fire({
+    });
+    Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Something went wrong!",
-        footer: '<a href="#">Why do I have this issue?</a>'
-    });*/
+        text: "Intentalo Nuevamente!",
+        footer: '<a href="#">¿Por qué tengo este problema?</a>'
+    });
     let datosPorEnviarAlBack={
         "nombre":nombres.value,
         "cantidadVida":cantidadVida.value,
