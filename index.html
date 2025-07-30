@@ -33,19 +33,17 @@
                     <input type="number" class="mb-3 form-control" placeholder="Poder de defensa" id="defensa">
                     <input type="text" class="mb-3 form-control" placeholder="URL fotografia" id="foto">
                     <input type="date" class="mb-3 form-control" placeholder="Fecha creación" id="fecha">
-                    <input type="text" class="mb-3 form-control" placeholder="Categoria" id="categoria">
-                    <label class="form-label">¿Es legendario?</label>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="Legendario" id="legendarioTrue"
-                            value="true">
-                        <label class="form-check-label" for="legendarioTrue">Verdadero</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="Legendario" id="legendarioFalse"
-                            value="false" checked>
-                        <label class="form-check-label" for="legendarioFalse">Falso</label>
-                    </div>
-                    </div>
+                    <select class="mb-3 form-control" id="categoria">
+                        <option value="" disabled selected>Selecciona una categoría</option>
+                        <option value="categoria1">Heroes Clasicos</option>
+                        <option value="categoria2">Heroes Humanos</option>
+                        <option value="categoria3">Heroes Experimento cientifico</option>
+                    </select>
+                    <label for="legendario">Legendario:</label>
+                    <select id="legendario" name="legendario">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
 
                     <br><br>
                     <button class="btn btn-outline-dark" id="boton">Registrar</button>
@@ -59,7 +57,8 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
         </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./controlador.js"></script>
+    <script src="./controlador.js" type="module"></script>
+      
 
 
 </body>
